@@ -60,7 +60,7 @@ public class IssuesManager {
     public List<Issue> filterBy(Predicate<Issue> predicate) {
         Comparator<Issue> defaultComparator = new IssueCreatedAtComparator();
 
-        filterBy(predicate, defaultComparator);
+        return filterBy(predicate, defaultComparator);
     }
 
     public List<Issue> filterBy(Predicate<Issue> predicate, Comparator<Issue> comparator) {
