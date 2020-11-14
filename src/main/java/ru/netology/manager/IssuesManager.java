@@ -1,6 +1,6 @@
 package ru.netology.manager;
 
-import ru.netology.comparators.IssueCreatedAtComparator;
+import ru.netology.comparator.IssueCreatedAtComparator;
 import ru.netology.domain.Issue;
 import ru.netology.repository.IssuesRepository;
 
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class IssuesManager {
     IssuesRepository repository;
 
-    public void IssueManager(IssuesRepository repository) {
+    public IssuesManager(IssuesRepository repository) {
         this.repository = repository;
     }
 
